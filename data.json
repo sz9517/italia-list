@@ -660,8 +660,17 @@
           ]
         },
         {
-          "h": "酒類",
+          "h": "飲料 · 酒類",
           "items": [
+            {
+              "id": "sm-chinotto",
+              "n": "Chinotto 苦橙汽水",
+              "p": [
+                0.6,
+                1.5
+              ],
+              "note": "義大利國民汽水，用<b>苦橙（chinotto）</b>做的，顏色像可樂但味道是柑橘帶苦韻，不甜膩。常見牌子 San Pellegrino Chinò、Lurisia。<b>台灣幾乎買不到。</b>易開罐一罐約 €0.6–1，餐廳、bar 也點得到。⚠️ 玻璃瓶重又易碎，要帶回台灣建議挑鋁罐。"
+            },
             {
               "id": "sm-asti",
               "n": "Martini Asti 氣泡白酒",

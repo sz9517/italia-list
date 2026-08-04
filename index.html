@@ -47,11 +47,22 @@ h1 em{font-style:italic;font-weight:400;display:block;font-size:.52em;letter-spa
 
 /* nav */
 nav{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid var(--rule)}
-.chips{display:flex;gap:8px;overflow-x:auto;padding:10px var(--pad);scrollbar-width:none;max-width:640px;margin:0 auto}
+.chips-wrap{position:relative;max-width:640px;margin:0 auto}
+.chips-wrap::after{
+  content:"";position:absolute;right:0;top:0;bottom:0;width:40px;pointer-events:none;
+  background:linear-gradient(to right,rgba(250,248,241,0),var(--paper) 70%);
+  opacity:0;transition:opacity .2s;
+}
+.chips-wrap.more::after{opacity:1}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-padding-inline:var(--pad)}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:0 0 auto;border:1px solid var(--rule);background:transparent;color:var(--ink-soft);border-radius:999px;padding:7px 14px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.04em;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--paper)}
 .chip:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+@media (min-width:680px){
+  .chips{flex-wrap:wrap;overflow-x:visible}
+  .chips-wrap::after{display:none}
+}
 
 /* sections */
 section{padding:30px 0 4px;border-bottom:1px solid var(--rule)}
@@ -205,7 +216,7 @@ footer{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft
 </header>
 <div class="tape"></div>
 
-<nav><div class="chips" id="chips" role="group" aria-label="篩選"></div></nav>
+<nav><div class="chips-wrap" id="chipsWrap"><div class="chips" id="chips" role="group" aria-label="篩選"></div></div></nav>
 
 <main class="wrap" id="main"></main>
 <footer class="wrap" id="foot"></footer>
@@ -448,9 +459,22 @@ function bind(){
       document.querySelectorAll(".chip").forEach(function(x){x.setAttribute("aria-pressed","false")});
       c.setAttribute("aria-pressed","true");
       filter=c.dataset.f;applyFilter();
+      if(c.scrollIntoView)c.scrollIntoView({block:"nearest",inline:"nearest",behavior:"smooth"});
       window.scrollTo({top:0,behavior:"smooth"});
     });
   });
+  chipFade();
+}
+function chipFade(){
+  var box=document.getElementById("chips"),wrap=document.getElementById("chipsWrap");
+  if(!box||!wrap)return;
+  function upd(){
+    var more=box.scrollWidth-box.clientWidth-box.scrollLeft>4;
+    wrap.classList.toggle("more",more);
+  }
+  upd();
+  box.addEventListener("scroll",upd,{passive:true});
+  window.addEventListener("resize",upd);
 }
 function toggle(k){
   if(on(k))delete state[k];else state[k]=true;
