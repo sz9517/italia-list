@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vademecum - Italia</title>
+<meta name="theme-color" content="#0F3D2E">
+<meta name="description" content="義大利十日行程的隨身手冊：購物、美食、店家地圖、退稅與入境提醒。">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF8F1;
+  --paper-2:#F1EDE1;
+  --ink:#1B1A16;
+  --ink-soft:#5C5949;
+  --green:#0F3D2E;
+  --red:#B5322A;
+  --gold:#9A7B2E;
+  --rule:#D6D0BE;
+  --pad:18px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Sans TC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.65;font-size:16px;
+  padding-bottom:calc(96px + env(safe-area-inset-bottom));
+}
+.wrap{max-width:640px;margin:0 auto;padding:0 var(--pad)}
+
+/* header */
+header{background:var(--green);color:var(--paper);padding:calc(28px + env(safe-area-inset-top)) 0 26px}
+.tape{
+  height:9px;background:var(--green);
+  clip-path:polygon(0 0,3% 100%,6% 0,9% 100%,12% 0,15% 100%,18% 0,21% 100%,24% 0,27% 100%,30% 0,33% 100%,36% 0,39% 100%,42% 0,45% 100%,48% 0,51% 100%,54% 0,57% 100%,60% 0,63% 100%,66% 0,69% 100%,72% 0,75% 100%,78% 0,81% 100%,84% 0,87% 100%,90% 0,93% 100%,96% 0,99% 100%,100% 0);
+}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8FB8A5;margin:0 0 10px}
+h1{font-family:"Bodoni Moda",serif;font-weight:700;font-size:clamp(34px,10vw,46px);line-height:1;letter-spacing:-.01em;margin:0 0 12px}
+h1 em{font-style:italic;font-weight:400;display:block;font-size:.52em;letter-spacing:.02em;color:#B9D4C7;margin-top:8px}
+.meta{font-family:"IBM Plex Mono",monospace;font-size:12px;color:#8FB8A5;border-top:1px dashed rgba(143,184,165,.4);padding-top:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* nav */
+nav{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid var(--rule)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px var(--pad);scrollbar-width:none;max-width:640px;margin:0 auto}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;border:1px solid var(--rule);background:transparent;color:var(--ink-soft);border-radius:999px;padding:7px 14px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.04em;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--paper)}
+.chip:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* sections */
+section{padding:30px 0 4px;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:none}
+.daytag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0 0 6px}
+h2{font-family:"Bodoni Moda",serif;font-size:27px;font-weight:700;margin:0 0 4px;line-height:1.15;letter-spacing:-.01em}
+.sub{margin:0 0 18px;font-size:14px;color:var(--ink-soft)}
+h3{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-family:"IBM Plex Mono",monospace;color:var(--green);margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+h3 .cnt{font-weight:400;color:var(--ink-soft);letter-spacing:.04em}
+
+/* items */
+.item{border-bottom:1px dotted var(--rule)}
+.item:last-child{border-bottom:none}
+.row{display:flex;align-items:flex-start;gap:12px;padding:14px 0;cursor:pointer;user-select:none}
+.row:focus-visible{outline:2px solid var(--red);outline-offset:-2px}
+.box{flex:0 0 auto;width:23px;height:23px;margin-top:2px;border:1.5px solid var(--rule);border-radius:3px;position:relative;background:transparent;transition:background .15s,border-color .15s}
+.box::after{content:"";position:absolute;inset:0;opacity:0;transition:opacity .15s;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FAF8F1' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6L9 17l-5-5'/></svg>") center/15px no-repeat}
+.item.on .box{border-color:var(--green);background:var(--green)}
+.item.on .box::after{opacity:1}
+.item.on .name{color:var(--ink-soft);text-decoration:line-through;text-decoration-color:var(--rule)}
+.body{flex:1;min-width:0}
+.name{font-weight:500;font-size:16px;line-height:1.4}
+.right{flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-end;gap:6px;padding-top:2px}
+.price{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--green);font-weight:500;white-space:nowrap}
+.thumb{width:56px;height:56px;border-radius:3px;object-fit:cover;background:var(--paper-2);border:1px solid var(--rule);cursor:zoom-in;display:block}
+.thumb.gone{display:none}
+.item.on .thumb{opacity:.5}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:60;background:rgba(27,26,22,.88);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:78vh;border-radius:4px;background:var(--paper)}
+.lb-cap{position:absolute;left:0;right:0;bottom:calc(26px + env(safe-area-inset-bottom));text-align:center;color:var(--paper);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em;padding:0 24px}
+.note{margin:6px 0 0;font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+.note b{color:var(--ink);font-weight:500}
+.warn{color:var(--red)}
+
+/* custom items */
+.cust{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px dotted var(--rule)}
+.cust-n{flex:1;min-width:0;font-weight:500;font-size:15px;overflow-wrap:anywhere}
+.cust-p{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--green);font-weight:600;white-space:nowrap}
+.del{flex:0 0 auto;background:none;border:none;color:var(--rule);font-size:20px;line-height:1;cursor:pointer;padding:2px 4px}
+.del:hover,.del:focus{color:var(--red)}
+.del:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.none-yet{font-size:13.5px;color:var(--ink-soft);padding:4px 0 10px}
+
+.addbtn{width:100%;margin:12px 0 4px;background:transparent;border:1px dashed var(--rule);color:var(--green);border-radius:4px;padding:12px;cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.addbtn:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.addform{display:none;gap:8px;margin:12px 0 4px;background:var(--paper-2);border-radius:4px;padding:12px}
+.addform.open{display:block}
+.f-row{display:flex;gap:8px;margin-bottom:8px}
+.addform input{font-family:"Noto Sans TC",sans-serif;font-size:15px;border:1px solid var(--rule);border-radius:3px;padding:9px 10px;background:var(--paper);color:var(--ink);width:100%}
+.addform input.amt{font-family:"IBM Plex Mono",monospace;flex:0 0 108px;width:108px}
+.addform input:focus-visible{outline:2px solid var(--green);outline-offset:1px}
+.f-btns{display:flex;gap:8px}
+.f-btns button{flex:1;border-radius:3px;padding:10px;cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border:1px solid var(--green)}
+.f-ok{background:var(--green);color:var(--paper)}
+.f-no{background:transparent;color:var(--ink-soft);border-color:var(--rule) !important}
+.f-btns button:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* trip overview */
+.flight{background:var(--paper-2);border-radius:4px;padding:15px;margin:0 0 10px;border-left:3px solid var(--green)}
+.fl-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px}
+.fl-no{font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;color:var(--green);letter-spacing:.03em}
+.fl-rt{font-size:13.5px;color:var(--ink-soft);text-align:right}
+.fl-t{display:flex;align-items:center;gap:10px;font-family:"IBM Plex Mono",monospace;font-size:12px;margin-bottom:8px}
+.fl-a{font-size:14px;font-weight:600;color:var(--green);white-space:nowrap}
+.fl-t .arrow{flex:1;border-bottom:1px dashed var(--rule);position:relative;top:-2px}
+.fl-d{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-soft);line-height:1.7}
+.fl-n{font-size:13.5px;color:var(--ink-soft);margin:8px 0 0;line-height:1.6}
+.fl-n b{color:var(--ink);font-weight:500}
+
+.itin{width:100%;border-collapse:collapse;margin-top:2px}
+.itin td{padding:11px 0;border-bottom:1px dotted var(--rule);vertical-align:top;font-size:14px}
+.itin tr:last-child td{border-bottom:none}
+.itin .i-d{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--red);width:34px;white-space:nowrap;padding-top:13px}
+.itin .i-t{font-weight:500;line-height:1.45}
+.itin .i-n{display:block;font-size:12.5px;color:var(--ink-soft);font-weight:400;margin-top:2px}
+
+/* stores */
+.store{background:var(--paper-2);border-radius:4px;padding:14px 15px;margin:0 0 10px;border-left:3px solid var(--gold)}
+.store.pick{border-left-color:var(--green)}
+.store.avoid{border-left-color:var(--red)}
+.store-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.store-n{font-weight:700;font-size:15px}
+.store-r{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--gold);white-space:nowrap}
+.store-d{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-soft);margin:7px 0 0;line-height:1.7}
+.store-note{font-size:13.5px;color:var(--ink-soft);margin:8px 0 0}
+.map{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.03em;color:var(--green);text-decoration:none;border-bottom:1px solid var(--green);padding-bottom:1px}
+.map:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+/* callouts */
+.call{border:1px dashed var(--rule);border-radius:4px;padding:14px 15px;margin:16px 0;font-size:14px;color:var(--ink-soft);line-height:1.7}
+.call b{color:var(--ink)}
+.call.red{border-color:rgba(181,50,42,.4);background:rgba(181,50,42,.04)}
+.call.red b{color:var(--red)}
+ul.plain{margin:8px 0 0;padding-left:18px}
+ul.plain li{margin:5px 0}
+
+/* receipt bar */
+.receipt{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--green);color:var(--paper);padding-bottom:env(safe-area-inset-bottom)}
+.receipt .tape{transform:rotate(180deg);margin-top:-9px}
+.bar-track{height:2px;background:rgba(185,212,199,.25);max-width:calc(640px - var(--pad) * 2);margin:0 auto}
+.bar-fill{height:2px;background:var(--gold);width:0;transition:width .25s}
+.r-bar{display:flex;align-items:center;gap:14px;padding:12px var(--pad) 14px;max-width:640px;margin:0 auto}
+.r-left{flex:1;min-width:0}
+.r-lab{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#8FB8A5}
+.r-tot{font-family:"IBM Plex Mono",monospace;font-size:22px;font-weight:600;line-height:1.2;margin-top:2px}
+.r-twd{font-family:"IBM Plex Mono",monospace;font-size:12px;color:#B9D4C7;margin-left:8px;font-weight:400}
+.r-btn{flex:0 0 auto;background:transparent;border:1px solid rgba(185,212,199,.5);color:var(--paper);border-radius:999px;padding:9px 15px;cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:12px}
+.r-btn:focus-visible{outline:2px solid var(--paper);outline-offset:2px}
+
+/* sheet */
+.sheet{position:fixed;inset:0;z-index:50;background:rgba(15,61,46,.45);display:none;align-items:flex-end}
+.sheet.open{display:flex}
+.sheet-in{background:var(--paper);width:100%;max-width:640px;margin:0 auto;border-radius:10px 10px 0 0;padding:22px var(--pad) calc(24px + env(safe-area-inset-bottom));max-height:84vh;overflow-y:auto}
+.sheet-h{display:flex;justify-content:space-between;align-items:center}
+.sheet-h h4{font-family:"Bodoni Moda",serif;font-size:24px;margin:0;font-weight:700}
+.x{background:none;border:none;font-size:26px;line-height:1;color:var(--ink-soft);cursor:pointer;padding:0 4px}
+.x:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.grp-h{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin:20px 0 4px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
+.leader{display:flex;align-items:baseline;gap:6px;font-family:"IBM Plex Mono",monospace;font-size:13px;padding:6px 0}
+.leader .l-n{font-family:"Noto Sans TC",sans-serif;font-size:14px}
+.leader .l-d{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-soft);margin-left:6px}
+.leader .dots{flex:1;border-bottom:1px dotted var(--rule);transform:translateY(-4px)}
+.leader .l-p{color:var(--green);font-weight:500;white-space:nowrap}
+.subt{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-soft);padding-top:8px;margin-top:4px;border-top:1px dotted var(--rule)}
+.total{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:16px;border-top:1.5px solid var(--ink);margin-top:14px;padding-top:12px}
+.rate{display:flex;align-items:center;gap:8px;margin-top:18px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-soft)}
+.rate input{width:70px;font-family:"IBM Plex Mono",monospace;font-size:13px;border:1px solid var(--rule);border-radius:3px;padding:5px 8px;background:var(--paper);color:var(--ink)}
+.rate input:focus-visible{outline:2px solid var(--green);outline-offset:1px}
+.reset{margin-top:16px;width:100%;background:none;border:1px solid var(--rule);color:var(--ink-soft);border-radius:4px;padding:11px;cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:12px}
+.reset:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.empty{font-size:14px;color:var(--ink-soft);padding:20px 0;text-align:center;line-height:1.9}
+
+footer{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft);text-align:center;padding:26px 0 10px;letter-spacing:.04em;line-height:1.9}
+.offline{display:inline-block;margin-top:6px;padding:2px 8px;border:1px solid var(--rule);border-radius:999px;font-size:10px}
+.hidden{display:none !important}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow" id="eyebrow">載入中</p>
+    <h1 id="title">&nbsp;<em id="subtitle"></em></h1>
+    <div class="meta"><span id="route"></span><span id="stamp"></span></div>
+  </div>
+</header>
+<div class="tape"></div>
+
+<nav><div class="chips" id="chips" role="group" aria-label="篩選"></div></nav>
+
+<main class="wrap" id="main"></main>
+<footer class="wrap" id="foot"></footer>
+
+<div class="receipt">
+  <div class="tape"></div>
+  <div class="bar-track"><div class="bar-fill" id="fill"></div></div>
+  <div class="r-bar">
+    <div class="r-left">
+      <div class="r-lab">已買 <span id="count">0 項</span></div>
+      <div class="r-tot">€<span id="eur">0</span><span class="r-twd" id="twd">NT$0</span></div>
+    </div>
+    <button class="r-btn" id="open">明細</button>
+  </div>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="放大圖片">
+  <img id="lbImg" src="" alt="">
+  <p class="lb-cap" id="lbCap"></p>
+</div>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="消費明細">
+  <div class="sheet-in">
+    <div class="sheet-h"><h4>Scontrino</h4><button class="x" id="close" aria-label="關閉明細">&times;</button></div>
+    <div id="lines"></div>
+    <div class="rate">
+      <label for="rateIn">匯率 1 EUR =</label>
+      <input id="rateIn" type="number" inputmode="decimal" step="0.1" value="36">
+      <span>TWD</span>
+    </div>
+    <button class="reset" id="reset">清除所有紀錄</button>
+  </div>
+</div>
+
+<script>
+/* ---------- storage (safe) ---------- */
+var mem={};
+function sget(k){try{var v=localStorage.getItem(k);return v===null?mem[k]:v}catch(e){return mem[k]}}
+function sset(k,v){mem[k]=v;try{localStorage.setItem(k,v)}catch(e){}}
+
+var DATA=null,all=[],state={},custom=[],rate=36,filter="all";
+
+try{state=JSON.parse(sget("it-state")||"{}")}catch(e){state={}}
+try{custom=JSON.parse(sget("it-custom")||"[]")}catch(e){custom=[]}
+rate=parseFloat(sget("it-rate"))||36;
+
+/* 舊版有三段狀態，只保留「已買」 */
+(function(){
+  var changed=false;
+  for(var k in state){
+    if(state[k]==="got"){state[k]=true;changed=true}
+    else if(state[k]==="want"){delete state[k];changed=true}
+  }
+  if(changed)sset("it-state",JSON.stringify(state));
+})();
+
+function pstr(p){if(!p)return"—";return p[0]===p[1]?"€"+p[0]:"€"+p[0]+"–"+p[1]}
+function pmid(p){return p?(p[0]+p[1])/2:0}
+function on(k){return state[k]===true}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function eur(n){return Math.round(n*100)/100}
+function fmt(n){var r=Math.round(n*100)/100;return r%1===0?String(r):r.toFixed(2)}
+
+/* ---------- load ---------- */
+fetch("data.json",{cache:"no-cache"})
+  .then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})
+  .then(function(d){DATA=d;render()})
+  .catch(function(e){
+    document.getElementById("main").innerHTML=
+      '<div class="call red" style="margin-top:30px"><b>清單載入失敗</b><br>找不到 data.json，或還沒連過網路建立離線快取。連上網路後重新整理即可。<br><span style="font-size:12px">('+e.message+')</span></div>';
+    document.getElementById("eyebrow").textContent="離線";
+  });
+
+/* ---------- render ---------- */
+function render(){
+  var m=DATA.meta;
+  document.getElementById("eyebrow").textContent=m.eyebrow;
+  document.getElementById("title").firstChild.nodeValue=m.title;
+  document.getElementById("subtitle").textContent=m.subtitle;
+  document.getElementById("route").textContent=m.route;
+  if(!sget("it-rate"))rate=m.defaultRate||36;
+  document.getElementById("rateIn").value=rate;
+
+  var chips='<button class="chip" data-f="all" aria-pressed="true">全部</button>'+
+            '<button class="chip" data-f="got" aria-pressed="false">✓ 已買</button>';
+  if(DATA.trip)chips+='<button class="chip" data-f="'+DATA.trip.id+'" aria-pressed="false">'+DATA.trip.chip+'</button>';
+  DATA.days.forEach(function(d){chips+='<button class="chip" data-f="'+d.id+'" aria-pressed="false">'+d.chip+'</button>'});
+  chips+='<button class="chip" data-f="'+DATA.info.id+'" aria-pressed="false">'+DATA.info.chip+'</button>';
+  document.getElementById("chips").innerHTML=chips;
+
+  var h="",seen={};
+
+  /* 行程總覽 */
+  if(DATA.trip){
+    var t=DATA.trip;
+    h+='<section data-s="'+t.id+'"><p class="daytag">'+t.tag+'</p><h2>'+t.title+'</h2><p class="sub">'+t.sub+'</p>';
+    h+='<h3><span>航班</span></h3>';
+    (t.flights||[]).forEach(function(f){
+      h+='<div class="flight"><div class="fl-h"><span class="fl-no">'+f.leg+'</span><span class="fl-rt">'+f.route+'</span></div>'+
+         '<div class="fl-t"><span class="arrow"></span><span class="fl-a">'+f.arr+'</span></div>'+
+         '<p class="fl-d">'+f.detail+'</p>'+
+         (f.note?'<p class="fl-n">'+f.note+'</p>':'')+'</div>';
+    });
+    h+='<h3><span>十日流程</span></h3><table class="itin">';
+    (t.itinerary||[]).forEach(function(r){
+      h+='<tr><td class="i-d">'+r[0]+'</td>'+
+         '<td class="i-t">'+r[1]+(r[2]?'<span class="i-n">'+r[2]+'</span>':'')+'</td></tr>';
+    });
+    h+='</table>';
+    (t.calls||[]).forEach(function(c){h+='<div class="call'+(c.red?" red":"")+'">'+c.html+'</div>'});
+    h+='</section>';
+  }
+
+  DATA.days.forEach(function(d){
+    h+='<section data-s="'+d.id+'"><p class="daytag">'+d.tag+'</p><h2>'+d.title+'</h2><p class="sub">'+d.sub+'</p>';
+    d.groups.forEach(function(g){
+      h+='<h3><span>'+g.h+'</span></h3>';
+      g.items.forEach(function(it){
+        var k=it.id;
+        if(!k){console.error("項目缺少 id：",it.n);return}
+        if(seen[k])console.error("id 重複：",k);
+        seen[k]=1;
+        all.push({k:k,n:it.n,p:it.p,day:d.id,dayName:d.title});
+        h+='<div class="item'+(on(k)?" on":"")+'" id="'+k+'"><div class="row" role="checkbox" aria-checked="'+(on(k)?"true":"false")+'" tabindex="0" data-k="'+k+'">'+
+          '<span class="box" aria-hidden="true"></span><div class="body">'+
+          '<span class="name">'+it.n+'</span>'+
+          '<p class="note">'+it.note+'</p>'+
+          (it.map?'<a class="map" href="'+it.map+'" target="_blank" rel="noopener">↗ 地圖</a>':'')+
+          '</div><div class="right">'+
+          '<img class="thumb" src="'+(it.img||("img/"+k+".jpg"))+'" alt="'+esc(it.n)+'" loading="lazy" '+
+          'onerror="this.classList.add(\'gone\')" data-zoom="'+esc(it.n)+'">'+
+          '<span class="price">'+pstr(it.p)+'</span></div></div></div>';
+      });
+    });
+    if(d.stores&&d.stores.length){
+      h+='<h3><span>可逛的店</span></h3>';
+      d.stores.forEach(function(s){
+        h+='<div class="store'+(s.kind?" "+s.kind:"")+'"><div class="store-h"><span class="store-n">'+s.n+'</span><span class="store-r">'+s.r+'</span></div>'+
+        '<p class="store-d">'+s.addr+'<br>'+s.hrs+'</p><p class="store-note">'+s.note+'</p>'+
+        (s.map?'<a class="map" href="'+s.map+'" target="_blank" rel="noopener">↗ Google 地圖</a>':'')+'</div>';
+      });
+    }
+    (d.calls||[]).forEach(function(c){h+='<div class="call'+(c.red?" red":"")+'">'+c.html+'</div>'});
+
+    /* 自己加的 */
+    h+='<h3><span>自己加的</span><span class="cnt" id="cnt-'+d.id+'"></span></h3>'+
+       '<div id="cust-'+d.id+'"></div>'+
+       '<button class="addbtn" data-add="'+d.id+'">＋ 新增這天買的東西</button>'+
+       '<div class="addform" id="form-'+d.id+'">'+
+         '<div class="f-row">'+
+           '<input type="text" placeholder="買了什麼" data-n="'+d.id+'" maxlength="40">'+
+           '<input type="number" class="amt" placeholder="€ 金額" inputmode="decimal" step="0.01" min="0" data-p="'+d.id+'">'+
+         '</div>'+
+         '<div class="f-btns"><button class="f-ok" data-save="'+d.id+'">加入</button><button class="f-no" data-cancel="'+d.id+'">取消</button></div>'+
+       '</div>';
+    h+='</section>';
+  });
+  h+='<section data-s="'+DATA.info.id+'"><p class="daytag">'+DATA.info.tag+'</p><h2>'+DATA.info.title+'</h2>';
+  DATA.info.blocks.forEach(function(b){h+='<h3><span>'+b.h+'</span></h3><div class="call'+(b.red?" red":"")+'">'+b.html+'</div>'});
+  h+='</section>';
+  document.getElementById("main").innerHTML=h;
+
+  document.getElementById("stamp").textContent=all.length+" 項";
+  document.getElementById("foot").innerHTML="清單 "+all.length+" 項 · 價格為 2024–2026 年網路資料，僅供參考<br>資料更新 "+m.updated+
+    '<br><span class="offline" id="netlab">檢查中</span>';
+
+  bind();
+  DATA.days.forEach(function(d){paintCustom(d.id)});
+  paint();
+  netlab();
+}
+
+/* ---------- custom items ---------- */
+function saveCustom(){sset("it-custom",JSON.stringify(custom))}
+function custOf(day){return custom.filter(function(c){return c.day===day})}
+function paintCustom(day){
+  var box=document.getElementById("cust-"+day);if(!box)return;
+  var list=custOf(day),h="";
+  if(!list.length){h='<p class="none-yet">還沒有紀錄。買了清單外的東西就加進來，會一起計入總額。</p>'}
+  list.forEach(function(c){
+    h+='<div class="cust"><span class="cust-n">'+esc(c.n)+'</span>'+
+       '<span class="cust-p">€'+fmt(c.p)+'</span>'+
+       '<button class="del" data-del="'+c.id+'" aria-label="刪除 '+esc(c.n)+'">&times;</button></div>';
+  });
+  box.innerHTML=h;
+  var sum=list.reduce(function(a,c){return a+c.p},0);
+  var cnt=document.getElementById("cnt-"+day);
+  if(cnt)cnt.textContent=list.length?list.length+" 項 · €"+fmt(sum):"";
+}
+function addCustom(day){
+  var ni=document.querySelector('[data-n="'+day+'"]'),pi=document.querySelector('[data-p="'+day+'"]');
+  var n=ni.value.trim(),p=parseFloat(pi.value);
+  if(!n){ni.focus();return}
+  if(!(p>=0)){pi.focus();return}
+  custom.push({id:"c"+Date.now()+Math.floor(Math.random()*1000),day:day,n:n,p:eur(p)});
+  saveCustom();
+  ni.value="";pi.value="";
+  document.getElementById("form-"+day).classList.remove("open");
+  paintCustom(day);paint();
+}
+
+/* ---------- interaction ---------- */
+function bind(){
+  var main=document.getElementById("main");
+  main.addEventListener("click",function(e){
+    var t=e.target;
+    if(t.closest("a"))return;
+    if(t.classList.contains("thumb")){e.stopPropagation();openLB(t.src,t.dataset.zoom);return}
+    var add=t.closest("[data-add]");
+    if(add){
+      var f=document.getElementById("form-"+add.dataset.add);
+      f.classList.add("open");
+      document.querySelector('[data-n="'+add.dataset.add+'"]').focus();
+      return;
+    }
+    var save=t.closest("[data-save]");if(save){addCustom(save.dataset.save);return}
+    var can=t.closest("[data-cancel]");
+    if(can){document.getElementById("form-"+can.dataset.cancel).classList.remove("open");return}
+    var del=t.closest("[data-del]");
+    if(del){
+      var id=del.dataset.del,it=custom.filter(function(c){return c.id===id})[0];
+      if(it&&confirm("刪除「"+it.n+"」？")){
+        custom=custom.filter(function(c){return c.id!==id});
+        saveCustom();paintCustom(it.day);paint();
+      }
+      return;
+    }
+    var r=t.closest(".row");if(r)toggle(r.dataset.k);
+  });
+  main.addEventListener("keydown",function(e){
+    if(e.key==="Enter"){
+      var inp=e.target.closest("[data-n],[data-p]");
+      if(inp){e.preventDefault();addCustom(inp.dataset.n||inp.dataset.p);return}
+    }
+    var r=e.target.closest(".row");if(!r)return;
+    if(e.key===" "||e.key==="Enter"){e.preventDefault();toggle(r.dataset.k)}
+  });
+  document.querySelectorAll(".chip").forEach(function(c){
+    c.addEventListener("click",function(){
+      document.querySelectorAll(".chip").forEach(function(x){x.setAttribute("aria-pressed","false")});
+      c.setAttribute("aria-pressed","true");
+      filter=c.dataset.f;applyFilter();
+      window.scrollTo({top:0,behavior:"smooth"});
+    });
+  });
+}
+function toggle(k){
+  if(on(k))delete state[k];else state[k]=true;
+  sset("it-state",JSON.stringify(state));
+  var el=document.getElementById(k);
+  el.classList.toggle("on",on(k));
+  el.querySelector(".row").setAttribute("aria-checked",on(k)?"true":"false");
+  paint();
+  if(filter==="got")applyFilter();
+}
+function applyFilter(){
+  var gotMode=filter==="got";
+  document.querySelectorAll("section").forEach(function(s){
+    s.classList.toggle("hidden",!gotMode&&filter!=="all"&&s.dataset.s!==filter);
+  });
+  document.querySelectorAll(".item").forEach(function(i){
+    i.classList.toggle("hidden",gotMode&&!i.classList.contains("on"));
+  });
+  if(gotMode){
+    document.querySelectorAll("section").forEach(function(s){
+      if(s.dataset.s==="info"){s.classList.add("hidden");return}
+      var hasItems=s.querySelectorAll(".item:not(.hidden)").length>0;
+      var hasCust=custOf(s.dataset.s).length>0;
+      s.classList.toggle("hidden",!hasItems&&!hasCust);
+    });
+  }
+}
+
+/* ---------- totals ---------- */
+function paint(){
+  var n=0,sum=0,lines="";
+  all.forEach(function(i){
+    if(on(i.k)){n++;sum+=pmid(i.p);
+      lines+='<div class="leader"><span class="l-n">'+i.n+'</span><span class="dots"></span><span class="l-p">'+pstr(i.p)+'</span></div>'}
+  });
+  var cn=custom.length,cs=0,clines="";
+  custom.forEach(function(c){
+    cs+=c.p;
+    var day=(all.filter(function(a){return a.day===c.day})[0]||{}).dayName||c.day;
+    clines+='<div class="leader"><span class="l-n">'+esc(c.n)+'<span class="l-d">'+esc(day)+'</span></span><span class="dots"></span><span class="l-p">€'+fmt(c.p)+'</span></div>';
+  });
+
+  var tot=sum+cs;
+  document.getElementById("count").textContent=(n+cn)+" 項";
+  document.getElementById("eur").textContent=fmt(tot);
+  document.getElementById("twd").textContent="NT$"+Math.round(tot*rate).toLocaleString();
+  document.getElementById("fill").style.width=(all.length?n/all.length*100:0)+"%";
+
+  var out="";
+  if(n)out+='<p class="grp-h">清單項目 · '+n+' 項</p>'+lines+'<div class="subt"><span>小計（估算）</span><span>€'+fmt(sum)+'</span></div>';
+  if(cn)out+='<p class="grp-h">自己加的 · '+cn+' 項</p>'+clines+'<div class="subt"><span>小計（實付）</span><span>€'+fmt(cs)+'</span></div>';
+  if(out)out+='<div class="total"><span>合計</span><span>€'+fmt(tot)+' · NT$'+Math.round(tot*rate).toLocaleString()+'</span></div>';
+  else out='<p class="empty">還沒有任何紀錄。<br>買到清單上的東西就打勾，<br>清單外的用「＋ 新增」加進來。</p>';
+  document.getElementById("lines").innerHTML=out;
+}
+
+/* ---------- sheet ---------- */
+var sheet=document.getElementById("sheet");
+document.getElementById("open").addEventListener("click",function(){sheet.classList.add("open")});
+document.getElementById("close").addEventListener("click",function(){sheet.classList.remove("open")});
+sheet.addEventListener("click",function(e){if(e.target===sheet)sheet.classList.remove("open")});
+var lb=document.getElementById("lb");
+function openLB(src,cap){
+  document.getElementById("lbImg").src=src;
+  document.getElementById("lbImg").alt=cap||"";
+  document.getElementById("lbCap").textContent=cap||"";
+  lb.classList.add("open");
+}
+lb.addEventListener("click",function(){lb.classList.remove("open")});
+document.addEventListener("keydown",function(e){
+  if(e.key!=="Escape")return;
+  if(lb.classList.contains("open"))lb.classList.remove("open");
+  else sheet.classList.remove("open");
+});
+document.getElementById("rateIn").addEventListener("input",function(){
+  var v=parseFloat(this.value);if(v>0){rate=v;sset("it-rate",v);paint()}
+});
+document.getElementById("reset").addEventListener("click",function(){
+  if(confirm("清除所有打勾和自己加的項目？")){
+    state={};custom=[];sset("it-state","{}");saveCustom();
+    document.querySelectorAll(".item").forEach(function(i){
+      i.classList.remove("on");i.querySelector(".row").setAttribute("aria-checked","false");
+    });
+    DATA.days.forEach(function(d){paintCustom(d.id)});
+    paint();applyFilter();
+  }
+});
+
+/* ---------- offline ---------- */
+function netlab(){
+  var el=document.getElementById("netlab");if(!el)return;
+  function upd(){el.textContent=navigator.onLine?"已可離線使用":"離線中 · 清單仍可用"}
+  upd();window.addEventListener("online",upd);window.addEventListener("offline",upd);
+}
+if("serviceWorker" in navigator){
+  window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});
+}
+</script>
+</body>
+</html>

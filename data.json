@@ -1,0 +1,575 @@
+{
+  "meta": {
+    "eyebrow": "義大利 · 十日 · 直飛米蘭",
+    "title": "Vademecum",
+    "subtitle": "Italia · 義大利十日隨身手冊",
+    "route": "米蘭 → 威尼斯 → 佛羅倫斯 → 羅馬",
+    "defaultRate": 36,
+    "updated": "2026-08-03"
+  },
+  "days": [
+    {
+      "id": "d3",
+      "chip": "D3 威尼斯",
+      "tag": "Day 3",
+      "title": "威尼斯本島",
+      "sub": "聖馬可廣場、貢多拉、花神咖啡館下午茶。晚餐自理。",
+      "groups": [
+        {
+          "h": "要買",
+          "items": [
+            {
+              "id": "ven-florian-goods",
+              "n": "花神咖啡館自家商品",
+              "p": [
+                15,
+                25
+              ],
+              "note": "店內販售咖啡豆、鐵盒罐裝、巧克力，包裝經典。你當天會在裡面喝下午茶，順手買最方便。"
+            },
+            {
+              "id": "ven-murano",
+              "n": "穆拉諾玻璃小飾品",
+              "p": [
+                20,
+                60
+              ],
+              "note": "項鍊、耳環為主。仿製品很多，<b>認明「Vetro Artistico® Murano」標章</b>。行程不上玻璃島，本島店家自己挑。"
+            },
+            {
+              "id": "ven-paper",
+              "n": "大理石紋手工紙製品",
+              "p": [
+                10,
+                20
+              ],
+              "note": "筆記本 €10–20、書籤 €3–5。輕、不佔行李空間、適合分送。"
+            }
+          ]
+        },
+        {
+          "h": "要吃",
+          "items": [
+            {
+              "id": "ven-cicchetti",
+              "n": "Cicchetti + Spritz",
+              "p": [
+                5,
+                10
+              ],
+              "note": "威尼斯小酒館（bacaro）的下酒小點，一份 €1.5–3、Spritz €3–4。<b>當天晚餐行程不含</b>，里阿爾托橋附近最集中。"
+            }
+          ]
+        }
+      ],
+      "stores": [
+        {
+          "n": "Supermercato DESPAR San Marco",
+          "r": "★4.5",
+          "kind": "pick",
+          "addr": "Sestiere di S. Marco 3988",
+          "hrs": "每天 8:00–21:00",
+          "note": "聖馬可區評價最高的超市，還有現炸海鮮和熟食可當點心。",
+          "map": "https://maps.google.com/?cid=17536773906991574674"
+        },
+        {
+          "n": "Supermercato Despar（里阿爾托橋旁）",
+          "r": "★4.1",
+          "addr": "Riva del Carbon 4790–4792",
+          "hrs": "每天 8:00–21:00",
+          "note": "空間小、走道窄，適合快進快出。有微波爐可加熱熟食。",
+          "map": "https://maps.google.com/?cid=2629270951546064284"
+        },
+        {
+          "n": "Crai SanMarco Supermarket",
+          "r": "避開",
+          "kind": "avoid",
+          "addr": "Calle dei Fabbri 846",
+          "hrs": "—",
+          "note": "多則評論指出標價與實收金額不符，觀光客容易被坑。"
+        }
+      ],
+      "calls": [
+        {
+          "red": true,
+          "html": "<b>行李提醒</b>：Day 4 進佛羅倫斯老城要自己提過夜小包（大行李留車上），所以威尼斯這兩天<b>別買太重的東西</b>。"
+        }
+      ]
+    },
+    {
+      "id": "d5",
+      "chip": "D5 佛羅倫斯",
+      "tag": "Day 5 · 重點購物日",
+      "title": "佛羅倫斯",
+      "sub": "住老城區連泊兩晚，走路 5–10 分鐘內就有多間超市，開到 20:00–21:00，晚餐後還來得及。",
+      "groups": [
+        {
+          "h": "要買",
+          "items": [
+            {
+              "id": "flo-smn-soap",
+              "n": "Santa Maria Novella 手工香皂",
+              "p": [
+                12,
+                15
+              ],
+              "note": "13 世紀修道院藥房，<b>佛羅倫斯總店是全球分店中最便宜的</b>。熱門香味：石榴（Melograno）、鳶尾花、牛奶。也有 Discovery Kit 小樣組（8 款）適合入門或送禮。店內像博物館，不買也值得逛。"
+            },
+            {
+              "id": "flo-leather",
+              "n": "手工皮件",
+              "p": [
+                20,
+                150
+              ],
+              "note": "小皮夾殺價後 €20–40、包款 €60–150。<b>殺價要訣</b>：先全部逛一輪、記下喜歡的，最後回頭殺，<b>從五折開始喊</b>。想保證品質去 Scuola del Cuoio（不二價但貴 2–3 倍）。"
+            }
+          ]
+        },
+        {
+          "h": "要吃",
+          "items": [
+            {
+              "id": "flo-gelato",
+              "n": "Gelato",
+              "p": [
+                3,
+                4
+              ],
+              "note": "推薦 Vivoli、Perché No!、Gelateria dei Neri。<span class='warn'>避開顏色過度鮮豔、堆得像山的觀光店</span>（加了色素和乳化劑）。"
+            },
+            {
+              "id": "flo-mercato",
+              "n": "中央市場二樓美食街",
+              "p": [
+                8,
+                15
+              ],
+              "note": "一樓熟食店與生鮮攤，二樓美食街。<b>開到晚上 11 點</b>，很適合住老城區的晚上。"
+            }
+          ]
+        }
+      ],
+      "stores": [
+        {
+          "n": "Sapori & Dintorni",
+          "r": "★4.1",
+          "kind": "pick",
+          "addr": "Borgo S. Lorenzo 15/17",
+          "hrs": "一–六 8:00–21:00　日 9:00–21:00",
+          "note": "優先推這間。以老城區來說空間意外地大，價格在黃金地段算合理。",
+          "map": "https://maps.google.com/?cid=7311063255573358711"
+        },
+        {
+          "n": "Conad City",
+          "r": "★4.0",
+          "addr": "Via dei Servi 56R",
+          "hrs": "一–六 8:30–20:00　日 10:30–20:00",
+          "note": "離百花大教堂走路 2 分鐘，最方便。<span class='warn'>有評論反映標價與結帳金額不符，結帳時核對收據。</span>",
+          "map": "https://maps.google.com/?cid=14074504616918503749"
+        },
+        {
+          "n": "Pegna dal 1860",
+          "r": "★4.4",
+          "addr": "Via dello Studio 26R",
+          "hrs": "一–六 10:00–19:00　<span class='warn'>週日休</span>",
+          "note": "1860 年老店，專賣松露醬、橄欖油、巧克力等送禮食品。價格比超市高但品質好，Day 6 沒買夠可在這補。",
+          "map": "https://maps.google.com/?cid=14857001775720800356"
+        },
+        {
+          "n": "il Mercato Centrale 中央市場",
+          "r": "★4.4",
+          "addr": "Piazza del Mercato Centrale",
+          "hrs": "每天 9:00–23:00",
+          "note": "市場外圍街道就是皮件市集（10:00–19:00）。",
+          "map": "https://maps.google.com/?cid=9070668327180047285"
+        },
+        {
+          "n": "Officina Profumo SMN 總店",
+          "r": "★4.6",
+          "kind": "pick",
+          "addr": "Via della Scala 16",
+          "hrs": "每天 9:30–20:00（全年無休）",
+          "note": "排隊通常 10 分鐘內。有試香玻璃杯可以慢慢聞。",
+          "map": "https://maps.google.com/?cid=8871207580538567546"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "id": "d6",
+      "chip": "D6 托斯卡尼",
+      "tag": "Day 6",
+      "title": "托斯卡尼",
+      "sub": "蒙特普奇亞諾百年地窖酒莊品酒、皮恩札山城。",
+      "groups": [
+        {
+          "h": "要買",
+          "items": [
+            {
+              "id": "tos-vino-nobile",
+              "n": "Vino Nobile di Montepulciano 紅酒",
+              "p": [
+                15,
+                35
+              ],
+              "note": "義大利最早的 DOCG 之一，酒莊現場買比外面便宜。<span class='warn'>台灣入境每人免稅限 1 公升</span>，超過要申報課稅。"
+            },
+            {
+              "id": "tos-olive-oil",
+              "n": "托斯卡尼橄欖油",
+              "p": [
+                10,
+                20
+              ],
+              "note": "產地價，最安全的伴手禮之一。"
+            },
+            {
+              "id": "tos-truffle",
+              "n": "松露醬（小罐）",
+              "p": [
+                8,
+                15
+              ],
+              "note": "小罐好帶，佛羅倫斯 Pegna 也有得補。"
+            },
+            {
+              "id": "tos-cantucci",
+              "n": "Cantucci 杏仁脆餅",
+              "p": [
+                5,
+                8
+              ],
+              "note": "傳統吃法是配 Vin Santo 甜酒沾著吃。"
+            }
+          ]
+        }
+      ],
+      "stores": [],
+      "calls": [
+        {
+          "red": true,
+          "html": "<b>這天沒有超市</b>，只有酒莊和兩個山城。錯過就到佛羅倫斯 Pegna 或米蘭超市補。另外食品和酒類<b>不能退稅</b>，別浪費時間問。"
+        }
+      ]
+    },
+    {
+      "id": "d7",
+      "chip": "D7 羅馬",
+      "tag": "Day 7",
+      "title": "羅馬 · 梵蒂岡",
+      "sub": "從梵蒂岡排到西班牙廣場，中間沒有逛超市的空檔，飯店又在市郊。專心吃就好。",
+      "groups": [
+        {
+          "h": "要吃",
+          "items": [
+            {
+              "id": "rom-maritozzo",
+              "n": "Maritozzo 生乳包",
+              "p": [
+                2,
+                4
+              ],
+              "note": "布里歐麵包夾滿鮮奶油，帶淡淡橘皮香。百年老店 Regoli Pasticceria 最有名，一般咖啡廳、bar 也都有。"
+            },
+            {
+              "id": "rom-tartufo",
+              "n": "Tartufo 巧克力冰球",
+              "p": [
+                10,
+                14
+              ],
+              "note": "納佛那廣場的 Tre Scalini 是發源地——<b>當天會經過四河噴泉，就在同一個廣場</b>。坐下另計桌費。",
+              "map": "https://www.google.com/maps/search/?api=1&query=Tre+Scalini+Piazza+Navona+Roma"
+            },
+            {
+              "id": "rom-espresso",
+              "n": "站著喝 Espresso",
+              "p": [
+                1.5,
+                2.5
+              ],
+              "note": "<b>點法</b>：先到櫃檯付錢拿收據 → 拿收據到吧台跟咖啡師點。<span class='warn'>坐下來喝幾乎 €5 起跳，價差 2–3 倍。</span>"
+            }
+          ]
+        }
+      ],
+      "stores": [],
+      "calls": []
+    },
+    {
+      "id": "d8",
+      "chip": "D8 米蘭",
+      "tag": "Day 8 · 最後衝刺",
+      "title": "米蘭",
+      "sub": "Italo 高鐵 13:15 抵達米蘭中央車站。隔天就在 Malpensa 機場退稅，大額購物集中在這天最順。",
+      "groups": [
+        {
+          "h": "要買",
+          "items": [
+            {
+              "id": "mil-galleria",
+              "n": "精品 · 艾曼紐二世拱廊",
+              "p": null,
+              "note": "Prada 全球第一家店在此。行程有安排下車參觀。",
+              "map": "https://www.google.com/maps/search/?api=1&query=Galleria+Vittorio+Emanuele+II+Milano"
+            },
+            {
+              "id": "mil-saldi",
+              "n": "冬季折扣季（Saldi）",
+              "p": null,
+              "note": "一月初到二月中，你出發時還在特賣期，服飾精品有折扣，但尺碼可能挑剩。"
+            }
+          ]
+        }
+      ],
+      "stores": [
+        {
+          "n": "Sapori & Dintorni CONAD",
+          "r": "★4.0",
+          "kind": "pick",
+          "addr": "米蘭中央車站 Piazza Duca d'Aosta（地下一層）",
+          "hrs": "每天 7:00–21:00",
+          "note": "<b>超市清單的最佳一站。</b>高鐵抵達就在這裡。本地大型連鎖，價格正常不會被坑。<span class='warn'>入口在地下一層靠地鐵那側，不太好找。</span>",
+          "map": "https://maps.google.com/?cid=13559123097589491346"
+        },
+        {
+          "n": "Rinascente Milano",
+          "r": "★4.4",
+          "addr": "Piazza del Duomo（大教堂旁）",
+          "hrs": "一–四、日 10:00–21:00　五、六 10:00–22:00",
+          "note": "<b>樓上有退稅櫃檯。</b>頂樓餐廳露台可近距離看大教堂尖塔，也有義大利食材和酒類專區。",
+          "map": "https://maps.google.com/?cid=11611806535064570536"
+        }
+      ],
+      "calls": []
+    },
+    {
+      "id": "mk",
+      "chip": "超市",
+      "tag": "任何城市",
+      "title": "超市採買",
+      "sub": "推薦連鎖：Conad / Coop / Carrefour / Esselunga / Despar。避開街邊小型 mini market，價差很大。",
+      "groups": [
+        {
+          "h": "清單",
+          "items": [
+            {
+              "id": "sm-pocket-coffee",
+              "n": "Pocket Coffee",
+              "p": [
+                2,
+                3
+              ],
+              "note": "Ferrero 液體咖啡巧克力，<b>只在冬天生產</b>，二月正好買得到，台灣買不到。"
+            },
+            {
+              "id": "sm-vicenzi",
+              "n": "Matilde Vicenzi 長條千層酥",
+              "p": [
+                1.29,
+                1.29
+              ],
+              "note": "1905 年百年品牌，192 層酥皮。<span class='warn'>米蘭機場同款要 €4.15，貴三倍，一定在市區買。</span>"
+            },
+            {
+              "id": "sm-marvis",
+              "n": "Marvis 牙膏",
+              "p": [
+                3,
+                5
+              ],
+              "note": "「牙膏界的愛馬仕」，台灣專櫃約 NT$300+。"
+            },
+            {
+              "id": "sm-erbolario",
+              "n": "L'Erbolario 蕾莉歐",
+              "p": [
+                10,
+                20
+              ],
+              "note": "護手霜、身體乳。台灣專櫃約義大利的 2 倍價。"
+            },
+            {
+              "id": "sm-kinder",
+              "n": "Kinder 系列 / Baci 巧克力",
+              "p": [
+                2,
+                4
+              ],
+              "note": "義大利是 Kinder 故鄉，有 Kinderini 餅乾等台灣買不到的款式。"
+            },
+            {
+              "id": "sm-sancarlo",
+              "n": "San Carlo 洋芋片",
+              "p": [
+                1.5,
+                2
+              ],
+              "note": "1936 年米蘭起家，單純奶油鹹香味。"
+            },
+            {
+              "id": "sm-mulino",
+              "n": "Mulino Bianco 開心果夾心餅",
+              "p": [
+                2,
+                2
+              ],
+              "note": "開心果口味最特別，適合分送。"
+            },
+            {
+              "id": "sm-bialetti",
+              "n": "Bialetti 摩卡壺",
+              "p": [
+                20,
+                30
+              ],
+              "note": "3 杯份鋁製 €20–30。鋁製六角形不可用電磁爐；不鏽鋼圓形可用但較貴。"
+            },
+            {
+              "id": "sm-rummo",
+              "n": "Rummo 義大利麵",
+              "p": [
+                1,
+                2
+              ],
+              "note": "杜蘭小麥、口感Q彈，但<b>重量不輕</b>，斟酌數量。"
+            },
+            {
+              "id": "sm-asti",
+              "n": "Martini Asti 氣泡白酒",
+              "p": [
+                6,
+                8
+              ],
+              "note": "台灣半價。<span class='warn'>併入 1 公升酒類額度計算。</span>"
+            }
+          ]
+        }
+      ],
+      "stores": [],
+      "calls": []
+    }
+  ],
+  "info": {
+    "id": "info",
+    "chip": "提醒",
+    "tag": "出發前",
+    "title": "必讀提醒",
+    "blocks": [
+      {
+        "h": "台灣入境限制",
+        "red": true,
+        "html": "<ul class='plain'><li><b class='warn'>肉製品一律禁止</b>：生火腿、臘腸、莎樂美腸會被罰款，不要冒險</li><li><b>乳製品（起司）有限制</b> → 皮恩札的 Pecorino 羊奶起司建議現場吃</li><li><b>酒類每人免稅 1 公升</b>（紅酒 + Asti 加起來算）</li><li>橄欖油、松露醬、餅乾、咖啡、巧克力 → 沒問題</li></ul>"
+      },
+      {
+        "h": "退稅",
+        "html": "<ul class='plain'><li>門檻：<b>同一人、同一天、同一家店、單筆滿 €70</b></li><li>實際退回約 <b>12.5%</b>（扣掉手續費）</li><li><b>食品和酒類不能退稅</b></li><li>購物時要出示護照，跟店員說 “Tax Free”</li><li>商品<b>不能拆封使用、不能拆標籤</b></li><li>Day 9 在 Malpensa 機場辦理，<b>建議提早到機場</b></li><li>選信用卡通常比現金划算；若選現金，<b>幣別要選歐元</b></li></ul>"
+      },
+      {
+        "h": "行李節奏",
+        "html": "<ul class='plain'><li><b>Day 2–3 威尼斯</b>：買輕的（手工紙、玻璃小飾品）</li><li><b>Day 5 佛羅倫斯</b>：皮件、SMN，可以買重一點</li><li><b>Day 6 托斯卡尼</b>：酒和油最重，之後都是坐車</li><li><b>Day 8 米蘭</b>：大額精品 + 超市補齊，隔天直接退稅</li></ul>"
+      },
+      {
+        "h": "其他",
+        "html": "<ul class='plain'><li>二月威尼斯可能淹水（acqua alta），<b>帶防水鞋或鞋套</b></li><li>百花大教堂登頂 400 階無電梯，<b>穿好走的鞋</b></li><li>隨身帶零錢，很多廁所要付費（€0.5–1）</li><li>超市塑膠袋要付費，<b>自備購物袋</b></li></ul>"
+      }
+    ]
+  },
+  "trip": {
+    "id": "trip",
+    "chip": "行程",
+    "tag": "行程總覽",
+    "title": "航班與流程",
+    "sub": "航班時間為參考，最終以說明會文件為準。",
+    "flights": [
+      {
+        "leg": "去程",
+        "route": "台北 → 米蘭",
+        "arr": "06:50 抵達",
+        "detail": "桃園 T2 → 米蘭 Malpensa T1 · 飛行 14h40m · 時差 -7h",
+        "note": "深夜起飛、夜宿機上，<b>清晨抵達當天就直接開始跑行程</b>（貝加莫、維洛納），中間不進飯店。機上盡量睡。"
+      },
+      {
+        "leg": "回程",
+        "route": "米蘭 → 台北",
+        "arr": "隔日 06:10 抵達",
+        "detail": "米蘭 Malpensa T1 → 桃園 T2 · 飛行 12h10m",
+        "note": "<span class='warn'>上午的班機，退稅時間很緊。</span>推估天亮前就要從飯店出發，早餐可能改成餐盒。"
+      },
+      {
+        "leg": "高鐵",
+        "route": "羅馬 → 米蘭",
+        "arr": "13:15 抵達",
+        "detail": "Italo 法拉利高鐵 · 抵達米蘭中央車站",
+        "note": "暫訂時間，客滿或停駛則改前後班次。午餐配合車程<b>自理</b>。抵達的車站地下就有 Conad 超市。"
+      }
+    ],
+    "itinerary": [
+      [
+        "D1",
+        "台北 ✈ 米蘭",
+        "夜宿機上"
+      ],
+      [
+        "D2",
+        "米蘭 → 貝加莫 → 維洛納 → 威尼斯近郊",
+        "清晨落地，下車參觀為主"
+      ],
+      [
+        "D3",
+        "威尼斯本島",
+        "晚餐自理"
+      ],
+      [
+        "D4",
+        "威尼斯 → 比薩 → 佛羅倫斯",
+        "入住老城區，需備過夜小包"
+      ],
+      [
+        "D5",
+        "佛羅倫斯",
+        "重點購物日"
+      ],
+      [
+        "D6",
+        "佛羅倫斯 → 托斯卡尼 → 羅馬",
+        "酒莊品酒"
+      ],
+      [
+        "D7",
+        "羅馬 · 梵蒂岡",
+        "米其林推薦午餐"
+      ],
+      [
+        "D8",
+        "羅馬 → 米蘭",
+        "高鐵移動，午餐自理"
+      ],
+      [
+        "D9",
+        "米蘭 ✈ 台北",
+        "機場退稅，夜宿機上"
+      ],
+      [
+        "D10",
+        "抵達台北",
+        ""
+      ]
+    ],
+    "calls": [
+      {
+        "red": true,
+        "html": "<b>威尼斯嘉年華</b>：行程落在冬末，很可能碰上嘉年華開幕，而 D3 正好是威尼斯本島那天。人潮會非常多，花神咖啡館嘉年華期間不開放預約，下午茶可能改到其他咖啡館。官方日期通常前一年秋天公布。"
+      },
+      {
+        "red": false,
+        "html": "<b>時差</b>：義大利冬令時間比台灣慢 <b>7 小時</b>。台灣中午 12:00 = 義大利早上 05:00。"
+      },
+      {
+        "red": true,
+        "html": "<b>回程退稅動線</b>：上午的班機扣掉報到和安檢，能用的退稅時間大概只有 <b>60–90 分鐘</b>，而 Malpensa 旺季排隊可能就要這麼久。做法：<b>前一晚把所有退稅單填完</b>（護照號碼、地址、簽名），商品和單據集中放，一到機場先辦退稅再報到。退現金要排第二次隊，<b>選退到信用卡比較保險</b>。"
+      }
+    ]
+  }
+}
