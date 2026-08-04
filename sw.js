@@ -1,7 +1,7 @@
 /* 義大利購物清單 — 離線快取
    改完 data.json 或 index.html 後，把 VERSION 加一，
    使用者下次連網開啟時就會自動更新。 */
-const VERSION = "v8";
+const VERSION = "v9";
 const CACHE = "italia-" + VERSION;
 
 const CORE = [
