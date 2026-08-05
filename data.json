@@ -48,7 +48,34 @@
           ]
         }
       ],
-      "stores": [],
+      "stores": [
+        {
+          "n": "Cavour 1880（貝加莫上城）",
+          "r": "★4.4",
+          "kind": "pick",
+          "addr": "Via Gombito 7, Bergamo",
+          "hrs": "7:30–19:00　<span class='warn'>週三休</span>",
+          "note": "1880 年老店，在上城主街上。<b>有迷你版 Polenta e Osei 可以單吃</b>，不用扛整顆（大的 €8）。餐點評價很好，但服務態度評價兩極。",
+          "map": "https://maps.google.com/?cid=9210880471357770034"
+        },
+        {
+          "n": "Nessi Bergamo Alta",
+          "r": "★4.1",
+          "kind": "avoid",
+          "addr": "Via Gombito 34, Bergamo",
+          "hrs": "每天 9:00–21:00",
+          "note": "同一條街上，看起來很漂亮。<span class='warn'>但有評論直指他們的 Polenta e Osei 是工業量產、跟傳統做法無關，成分寫在包裝底部。</span>想吃道地的選 Cavour。"
+        },
+        {
+          "n": "Pasticceria Flego（維洛納）",
+          "r": "★4.2",
+          "kind": "pick",
+          "addr": "Via Stella 13, Verona",
+          "hrs": "每天 7:30–19:30",
+          "note": "舊城區，離茱麗葉故居很近。提拉米蘇和 Nadalin（維洛納傳統蛋糕）被當地人推薦。外帶會用金字盒包好。",
+          "map": "https://maps.google.com/?cid=11536956799920297046"
+        }
+      ],
       "calls": [
         {
           "red": true,
@@ -129,6 +156,40 @@
         }
       ],
       "stores": [
+        {
+          "n": "Bacaro Risorto Castello",
+          "r": "★4.5",
+          "kind": "pick",
+          "addr": "Campo S. Provolo 4700",
+          "hrs": "每天 8:00–凌晨 1:00",
+          "note": "<b>晚餐自理首選。</b>2310 則評論，反覆被說是「當地人去、不是觀光客」的店，價格公道。從聖馬可往東走約 5 分鐘。",
+          "map": "https://maps.google.com/?cid=5994316730068808510"
+        },
+        {
+          "n": "Pasticceria Tonolo",
+          "r": "★4.6",
+          "kind": "pick",
+          "addr": "Calle S. Pantalon 3764",
+          "hrs": "7:30–19:00　<span class='warn'>週一休．週日只到 13:00</span>",
+          "note": "1886 年創立。<b>有評論直接點名嘉年華期間的 frittelle 特別好</b>，正好對上你的時間。⚠️ 在本島西側，離聖馬可走路約 20 分鐘，點心常很快賣完，要早上去。",
+          "map": "https://maps.google.com/?cid=13180938096842484651"
+        },
+        {
+          "n": "Papier Machè Venezia",
+          "r": "★4.3",
+          "addr": "Calle Longa Santa Maria Formosa 5174/B",
+          "hrs": "9:00–19:30　<span class='warn'>週日休</span>",
+          "note": "手工面具工作室，老闆自己做。多則評論說比聖馬可廣場周邊的觀光店好太多。",
+          "map": "https://maps.google.com/?cid=8476166880649744286"
+        },
+        {
+          "n": "Manufactus Venezia",
+          "r": "★4.7",
+          "addr": "Calle de le Bande 5275",
+          "hrs": "11:00–19:00　<span class='warn'>週日休</span>",
+          "note": "手工紙加皮革筆記本。有人買到<b>筆＋墨水＋印章＋蠟封套組 €40</b>。",
+          "map": "https://maps.google.com/?cid=14448404961060656838"
+        },
         {
           "n": "Supermercato DESPAR San Marco",
           "r": "★4.5",
@@ -290,6 +351,48 @@
       ],
       "stores": [
         {
+          "n": "Barroccino - L'ora del Gelato",
+          "r": "★4.8",
+          "kind": "pick",
+          "addr": "Via del Corso 66r",
+          "hrs": "10:00–凌晨 00:30–01:00",
+          "note": "<b>晚上首選。</b>佛羅倫斯評分最高的 gelato。<b>開到半夜</b>，你們住老城區，晚餐後散步就到，比排 Vivoli 實際多了。",
+          "map": "https://maps.google.com/?cid=7259281079996781303"
+        },
+        {
+          "n": "Vivoli",
+          "r": "★4.5",
+          "addr": "Via Isola delle Stinche 7r",
+          "hrs": "8:00–21:00　<span class='warn'>週一休</span>",
+          "note": "佛羅倫斯最老的 gelateria，8307 則評論。招牌是 <b>Affogato</b>（濃縮咖啡淋冰淇淋，€6–9）。排隊很長但移動快，隔壁小店面同樣東西人較少。",
+          "map": "https://maps.google.com/?cid=12532930283436957875"
+        },
+        {
+          "n": "Perché No!...",
+          "r": "★4.6",
+          "addr": "Via dei Tavolini 19r",
+          "hrs": "11:00–20:00　<span class='warn'>週二休</span>",
+          "note": "1939 年開到現在、一家人經營。有客人連續光顧 25 年。",
+          "map": "https://maps.google.com/?cid=6340804608041871100"
+        },
+        {
+          "n": "Scuola del Cuoio 皮件學校",
+          "r": "★4.6",
+          "kind": "pick",
+          "addr": "Via di S. Giuseppe 5/R",
+          "hrs": "每天 10:00–18:30",
+          "note": "可以看到師傅現場製作，能客製、<b>可免費壓字</b>。價格高但品質確定。在聖十字教堂後方。",
+          "map": "https://maps.google.com/?cid=86718117911120992"
+        },
+        {
+          "n": "Il Papiro",
+          "r": "★4.7",
+          "addr": "Borgo S. Lorenzo 45R",
+          "hrs": "9:00–19:30（日 10:00–19:00）",
+          "note": "<b>就在 Sapori & Dintorni 超市旁邊，順路。</b>老闆娘會現場示範大理石紋紙怎麼做，全家族手工。",
+          "map": "https://maps.google.com/?cid=4168112936500457725"
+        },
+        {
           "n": "Sapori & Dintorni",
           "r": "★4.1",
           "kind": "pick",
@@ -401,7 +504,25 @@
           ]
         }
       ],
-      "stores": [],
+      "stores": [
+        {
+          "n": "Alimentari Enoteca Lo Sfizio",
+          "r": "★4.6",
+          "kind": "pick",
+          "addr": "Viale Piero Calamandrei 14, Montepulciano",
+          "hrs": "10:00–20:30　<span class='warn'>週日休</span>",
+          "note": "評論說是<b>「避開觀光陷阱」</b>的選擇。酒、火腿、起司價格合理，可內用也可外帶。",
+          "map": "https://maps.google.com/?cid=3009294151429062854"
+        },
+        {
+          "n": "主街上的觀光酒莊店",
+          "r": "—",
+          "kind": "avoid",
+          "addr": "Via di Gracciano / Via di Voltaia nel Corso",
+          "hrs": "—",
+          "note": "<span class='warn'>山城主街上的幾家 enoteca 要小心。</span>多則評論抱怨價格虛高、服務態度差，有人買了一瓶酒回家發現網路價只要一半。買之前先查一下行情。"
+        }
+      ],
       "calls": [
         {
           "red": true,
@@ -469,7 +590,32 @@
           ]
         }
       ],
-      "stores": [],
+      "stores": [
+        {
+          "n": "金杯咖啡 Tazza d'Oro",
+          "r": "★4.4",
+          "kind": "pick",
+          "addr": "Via degli Orfani 84（萬神殿旁）",
+          "hrs": "7:00–20:00（日 10:00–19:00）",
+          "note": "<b>買豆子選這家。</b>有評論提到半磅綜合豆只要 €6.5。就算排隊也很快（多數人外帶）。吧台站著喝便宜很多，店內有廁所。",
+          "map": "https://maps.google.com/?cid=1834980366110237772"
+        },
+        {
+          "n": "Sant'Eustachio Caffè",
+          "r": "★4.1",
+          "addr": "Piazza di S. Eustachio 82",
+          "hrs": "每天 7:30–24:00",
+          "note": "名氣更大、近 1.3 萬則評論，<span class='warn'>但只有 4.1，抱怨集中在價格和過度觀光化</span>。咖啡本身好，要買豆子的話金杯更划算。"
+        },
+        {
+          "n": "Giolitti 冰淇淋",
+          "r": "★4.4",
+          "addr": "Via degli Uffici del Vicario 40",
+          "hrs": "每天 7:30–24:00",
+          "note": "羅馬老牌，離萬神殿 3 分鐘。<b>先付錢拿票再點口味</b>，中杯三球約 €6。坐下另計餐桌費。",
+          "map": "https://maps.google.com/?cid=4062539611586396423"
+        }
+      ],
       "calls": []
     },
     {
@@ -589,6 +735,15 @@
         }
       ],
       "stores": [
+        {
+          "n": "Marchesi 1824",
+          "r": "★4.3",
+          "kind": "pick",
+          "addr": "Galleria Vittorio Emanuele II（Prada 樓上）",
+          "hrs": "每天 7:30–21:00",
+          "note": "<b>行程本來就會經過拱廊。</b>1824 年創立，米蘭最老的糕餅店之一，坐下約等 10 分鐘。窗邊位置可以俯瞰拱廊。",
+          "map": "https://maps.google.com/?cid=7827794602888508135"
+        },
         {
           "n": "Sapori & Dintorni CONAD",
           "r": "★4.0",
