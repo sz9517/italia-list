@@ -803,7 +803,7 @@
             },
             {
               "id": "sm-sancarlo",
-              "n": "San Carlo 洋芋片",
+              "n": "San Carlo 1936 洋芋片",
               "p": [
                 1.5,
                 2
@@ -812,12 +812,12 @@
             },
             {
               "id": "sm-mulino",
-              "n": "Mulino Bianco 開心果夾心餅",
+              "n": "Mulino Bianco 餅乾（多口味）",
               "p": [
                 2,
                 2
               ],
-              "note": "開心果口味最特別，適合分送。"
+              "note": "義大利最大的餅乾品牌，<b>整面貨架都是他家</b>。開心果夾心最特別，另有 Abbracci、Baiocchi、Pan di Stelle 系列，可以各拿一種。"
             },
             {
               "id": "sm-amedei",
@@ -835,7 +835,7 @@
                 5,
                 15
               ],
-              "note": "金元寶造型的 Gianduiotto，義大利榛果巧克力的原型。"
+              "note": "金元寶造型的 Gianduiotto，義大利榛果巧克力的原型。1826 年杜林創立，<b>就是發明 gianduia 的那家</b>。"
             },
             {
               "id": "sm-leone",
@@ -848,12 +848,12 @@
             },
             {
               "id": "sm-loacker",
-              "n": "Loacker 提拉米蘇夾心餅",
+              "n": "Loacker 威化餅（Wafer）",
               "p": [
                 2,
                 4
               ],
-              "note": "把提拉米蘇做成夾心餅乾，同時有巧克力、咖啡和奶香。"
+              "note": "經典是 Napolitaner 榛果和 <b>提拉米蘇口味</b>（同時有巧克力、咖啡和奶香）。整條裝、迷你包、Quadratini 方塊都有，口味比台灣多很多。"
             },
             {
               "id": "sm-amaretti",
@@ -989,6 +989,42 @@
                 15
               ],
               "note": "⭐ 西西里開心果做的抹醬，濃度和香氣是台灣買不到的層次，抹麵包或做甜點都好。<span class='warn'>玻璃罐要包好防碎。</span>"
+            },
+            {
+              "id": "sm-bocconcini",
+              "n": "Bocconcini 小泡芙餅乾（白巧克力）",
+              "p": [
+                2,
+                4
+              ],
+              "note": "<b>藍色包裝＝白巧克力口味。</b>小球狀酥餅包巧克力內餡，一口一個。常見牌子有 Vicenzi、Bauli，超市餅乾區找藍盒。"
+            },
+            {
+              "id": "sm-novi",
+              "n": "Novi 巧克力",
+              "p": [
+                2,
+                6
+              ],
+              "note": "1903 年皮埃蒙特品牌，跟 Perugina、Caffarel 齊名。<b>Nocciolato</b>（整顆榛果巧克力磚）最經典，黑巧比例高。"
+            },
+            {
+              "id": "sm-orange-choc",
+              "n": "橙皮巧克力 Cioccolato all'arancia",
+              "p": [
+                3,
+                10
+              ],
+              "note": "黑巧克力包糖漬橙皮條（<b>scorze d'arancia</b>），義大利很常見但台灣少。Novi、Venchi、Perugina 都有做，條狀和單顆裝都有。"
+            },
+            {
+              "id": "sm-piugusto",
+              "n": "PiùGusto 洋芋片（檸檬胡椒）",
+              "p": [
+                1.5,
+                3
+              ],
+              "note": "<b>檸檬胡椒（limone e pepe）是招牌口味</b>，酸香帶辛，台灣完全買不到。同系列還有松露、辣味。"
             }
           ]
         },
@@ -1229,6 +1265,15 @@
                 6
               ],
               "note": "義大利家家戶戶都有，香味很經典，便宜好帶。"
+            },
+            {
+              "id": "sm-biorepair",
+              "n": "Biorepair 貝利達牙膏",
+              "p": [
+                4,
+                8
+              ],
+              "note": "義大利藥妝店常見，主打<b>修復琺瑯質</b>的微晶羥基磷灰石技術。跟 Marvis 走完全不同路線——Marvis 是設計和味道，這支是功能性。台灣價差不小。"
             }
           ]
         }
