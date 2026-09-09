@@ -1,7 +1,7 @@
 /* 義大利購物清單 — 離線快取
    改完 data.json 或 index.html 後，把 VERSION 加一，
    使用者下次連網開啟時就會自動更新。 */
-const VERSION = "v16";
+const VERSION = "v17";
 const CACHE = "italia-" + VERSION;
 
 const CORE = [
@@ -38,6 +38,18 @@ self.addEventListener("fetch", (e) => {
 
   const url = new URL(req.url);
   const sameOrigin = url.origin === self.location.origin;
+
+  // 圖片：快取優先，省流量也讓離線看得到
+  if (sameOrigin && /\.(jpe?g|png|webp|avif|gif)$/i.test(url.pathname)) {
+    e.respondWith(
+      caches.match(req).then((hit) => hit || fetch(req).then((res) => {
+        const copy = res.clone();
+        caches.open(CACHE).then((c) => c.put(req, copy));
+        return res;
+      }))
+    );
+    return;
+  }
 
   // 本站檔案：網路優先，失敗才用快取（這樣一連網就是最新的）
   if (sameOrigin) {

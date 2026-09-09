@@ -179,6 +179,14 @@ Each day can carry a `sights` array. Every entry renders as a collapsed
 pin; `d` is the description. Both accept HTML. Sights carry no IDs and no
 checked state — they're read-only reference.
 
+An optional `q` field adds a 看圖 link that opens a Google Images search
+for that phrase. Write the query in Italian — searching `Pietà Bandini
+Michelangelo` returns far better matches than any English or Chinese
+rendering of the same work. Linking out rather than embedding keeps the
+repo small, sidesteps image licensing entirely, and shows several angles
+of a work instead of one fixed photo. The trade-off is that these links
+need a connection, unlike the rest of the page.
+
 ### Adding a store
 
 Add to the day's `stores` array:
