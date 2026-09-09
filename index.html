@@ -86,6 +86,8 @@ h3 .cnt{font-weight:400;color:var(--ink-soft);letter-spacing:.04em}
 .item.on .name{color:var(--ink-soft);text-decoration:line-through;text-decoration-color:var(--rule)}
 .body{flex:1;min-width:0}
 .name{font-weight:500;font-size:16px;line-height:1.4}
+.must-tag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;background:var(--red);color:var(--paper);padding:1px 6px;border-radius:3px;margin-left:7px;vertical-align:2px;white-space:nowrap}
+.item.on .must-tag{background:var(--rule)}
 .right{flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-end;gap:6px;padding-top:2px}
 .price{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--green);font-weight:500;white-space:nowrap}
 .thumb{width:56px;height:56px;border-radius:3px;object-fit:cover;background:var(--paper-2);border:1px solid var(--rule);cursor:zoom-in;display:block}
@@ -142,6 +144,25 @@ h3 .cnt{font-weight:400;color:var(--ink-soft);letter-spacing:.04em}
 .itin .i-d{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--red);width:34px;white-space:nowrap;padding-top:13px}
 .itin .i-t{font-weight:500;line-height:1.45}
 .itin .i-n{display:block;font-size:12.5px;color:var(--ink-soft);font-weight:400;margin-top:2px}
+
+/* sights */
+.sight{border:1px solid var(--rule);border-radius:4px;margin:0 0 9px;overflow:hidden}
+.sight summary{list-style:none;cursor:pointer;padding:13px 15px;display:flex;align-items:flex-start;gap:10px;background:var(--paper-2)}
+.sight summary::-webkit-details-marker{display:none}
+.sight summary:focus-visible{outline:2px solid var(--red);outline-offset:-2px}
+.sg-tw{flex:1;min-width:0}
+.sg-p{font-weight:700;font-size:15px;line-height:1.35}
+.sg-n{font-size:12.5px;color:var(--ink-soft);margin-top:3px;line-height:1.5}
+.sg-c{flex:0 0 auto;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--gold);padding-top:3px;white-space:nowrap}
+.sg-c::after{content:" ▸";display:inline-block;transition:transform .15s}
+.sight[open] .sg-c::after{transform:rotate(90deg)}
+.sg-body{padding:4px 15px 13px}
+.sg-i{padding:11px 0;border-bottom:1px dotted var(--rule)}
+.sg-i:last-child{border-bottom:none}
+.sg-in{font-weight:500;font-size:14.5px;line-height:1.4}
+.sg-iw{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--green);margin-top:3px;line-height:1.5}
+.sg-id{font-size:13px;color:var(--ink-soft);margin-top:5px;line-height:1.6}
+.sg-id b,.sg-iw b{color:var(--ink);font-weight:600}
 
 /* stores */
 .store{background:var(--paper-2);border-radius:4px;padding:14px 15px;margin:0 0 10px;border-left:3px solid var(--gold)}
@@ -342,7 +363,7 @@ function render(){
         all.push({k:k,n:it.n,p:it.p,day:d.id,dayName:d.title});
         h+='<div class="item'+(on(k)?" on":"")+'" id="'+k+'"><div class="row" role="checkbox" aria-checked="'+(on(k)?"true":"false")+'" tabindex="0" data-k="'+k+'">'+
           '<span class="box" aria-hidden="true"></span><div class="body">'+
-          '<span class="name">'+it.n+'</span>'+
+          '<span class="name">'+it.n+'</span>'+(it.must?'<span class="must-tag">必買</span>':'')+
           '<p class="note">'+it.note+'</p>'+
           (it.map?'<a class="map" href="'+it.map+'" target="_blank" rel="noopener">↗ 地圖</a>':'')+
           '</div><div class="right">'+
@@ -351,6 +372,21 @@ function render(){
           '<span class="price">'+pstr(it.p)+'</span></div></div></div>';
       });
     });
+    if(d.sights&&d.sights.length){
+      var sn=0;d.sights.forEach(function(s){sn+=s.items.length});
+      h+='<h3><span>必看</span><span class="cnt">'+sn+' 項</span></h3>';
+      d.sights.forEach(function(s){
+        h+='<details class="sight"><summary><span class="sg-tw"><span class="sg-p">'+s.place+'</span>'+
+           (s.note?'<span class="sg-n">'+s.note+'</span>':'')+'</span>'+
+           '<span class="sg-c">'+s.items.length+'</span></summary><div class="sg-body">';
+        s.items.forEach(function(x){
+          h+='<div class="sg-i"><div class="sg-in">'+x.n+'</div>'+
+             (x.where?'<div class="sg-iw">📍 '+x.where+'</div>':'')+
+             (x.d?'<div class="sg-id">'+x.d+'</div>':'')+'</div>';
+        });
+        h+='</div></details>';
+      });
+    }
     if(d.stores&&d.stores.length){
       h+='<h3><span>可逛的店</span></h3>';
       d.stores.forEach(function(s){

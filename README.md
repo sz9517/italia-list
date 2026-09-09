@@ -106,6 +106,7 @@ Open `data.json`, find the day's `groups` → `items`, and add an entry:
 | `n` | Item name, required |
 | `p` | Price range as `[low, high]`. Use `null` for no price — displays as `—` |
 | `note` | Description. **HTML is allowed**: `<b>bold</b>`, `<span class='warn'>red warning</span>` |
+| `must` | Optional. Set to `true` to show a red 必買 badge next to the name |
 | `map` | Optional Google Maps link |
 
 Totals use the midpoint of the range; `null` contributes nothing.
@@ -154,6 +155,29 @@ Notes:
 - Product shots of branded goods are generally someone else's copyright. Photos you take yourself are the safe option, and are more useful anyway — a shelf photo shows the packaging as you'll actually encounter it
 
 ---
+
+### Adding a must-see list
+
+Each day can carry a `sights` array. Every entry renders as a collapsed
+`<details>` block with the artworks inside:
+
+```json
+{
+  "place": "聖彼得大教堂 ⭐",
+  "note": "<b>入內。</b>",
+  "items": [
+    {
+      "n": "米開朗基羅《聖殤 Pietà》",
+      "where": "進門後右手邊第一個禮拜堂",
+      "d": "他 24 歲的作品，也是唯一一件他簽名的作品。"
+    }
+  ]
+}
+```
+
+`where` is the location inside the building and renders in monospace with a
+pin; `d` is the description. Both accept HTML. Sights carry no IDs and no
+checked state — they're read-only reference.
 
 ### Adding a store
 
