@@ -58,6 +58,8 @@ nav{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px s
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:0 0 auto;border:1px solid var(--rule);background:transparent;color:var(--ink-soft);border-radius:999px;padding:7px 14px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.04em;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--paper)}
+.chip.sos-chip{border-color:rgba(181,50,42,.45);color:var(--red)}
+.chip.sos-chip[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:var(--paper)}
 .chip:focus-visible{outline:2px solid var(--red);outline-offset:2px}
 @media (min-width:680px){
   .chips{flex-wrap:wrap;overflow-x:visible}
@@ -169,6 +171,18 @@ h3 .cnt{font-weight:400;color:var(--ink-soft);letter-spacing:.04em}
 .sg-id b,.sg-iw b{color:var(--ink);font-weight:600}
 .sg-img{display:inline-flex;align-items:center;gap:5px;margin-top:8px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.03em;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:1px}
 .sg-img:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+/* sos */
+.sos-t{display:flex;align-items:flex-start;gap:12px;background:var(--paper-2);border-left:3px solid var(--red);border-radius:4px;padding:13px 15px;margin:0 0 9px;text-decoration:none;color:inherit}
+.sos-t:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.sos-tw{flex:1;min-width:0}
+.sos-n{font-weight:700;font-size:15px;line-height:1.35;color:var(--ink)}
+.sos-d{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.65}
+.sos-d b{color:var(--ink);font-weight:600}
+.sos-call{flex:0 0 auto;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;color:var(--paper);background:var(--red);border-radius:999px;padding:5px 11px;white-space:nowrap;margin-top:2px}
+.sos-h{border:1px dashed var(--rule);border-radius:4px;padding:14px 15px;margin:0 0 9px}
+.sos-h .sos-n{font-size:14.5px}
+.sos-h .sos-d{margin-top:7px}
 
 /* stores */
 .store{background:var(--paper-2);border-radius:4px;padding:14px 15px;margin:0 0 10px;border-left:3px solid var(--gold)}
@@ -332,6 +346,7 @@ function render(){
   if(DATA.trip)chips+='<button class="chip" data-f="'+DATA.trip.id+'" aria-pressed="false">'+DATA.trip.chip+'</button>';
   DATA.days.forEach(function(d){chips+='<button class="chip" data-f="'+d.id+'" aria-pressed="false">'+d.chip+'</button>'});
   chips+='<button class="chip" data-f="'+DATA.info.id+'" aria-pressed="false">'+DATA.info.chip+'</button>';
+  if(DATA.sos)chips+='<button class="chip sos-chip" data-f="'+DATA.sos.id+'" aria-pressed="false">'+DATA.sos.chip+'</button>';
   document.getElementById("chips").innerHTML=chips;
 
   var h="",seen={};
@@ -424,6 +439,25 @@ function render(){
   h+='<section data-s="'+DATA.info.id+'"><p class="daytag">'+DATA.info.tag+'</p><h2>'+DATA.info.title+'</h2>';
   DATA.info.blocks.forEach(function(b){h+='<h3><span>'+b.h+'</span></h3><div class="call'+(b.red?" red":"")+'">'+b.html+'</div>'});
   h+='</section>';
+
+  /* 急難 */
+  if(DATA.sos){
+    var so=DATA.sos;
+    h+='<section data-s="'+so.id+'"><p class="daytag">'+so.tag+'</p><h2>'+so.title+'</h2><p class="sub">'+so.sub+'</p>';
+    so.blocks.forEach(function(b){
+      h+='<h3><span>'+b.h+'</span></h3>';
+      b.items.forEach(function(x){
+        if(b.kind==="tel"&&x.tel){
+          h+='<a class="sos-t" href="tel:'+x.tel+'"><span class="sos-tw"><span class="sos-n">'+x.n+'</span>'+
+             '<span class="sos-d">'+x.d+'</span></span><span class="sos-call">撥打</span></a>';
+        }else{
+          h+='<div class="sos-h"><div class="sos-n">'+x.n+'</div><div class="sos-d">'+x.d+'</div></div>';
+        }
+      });
+    });
+    h+='</section>';
+  }
+
   document.getElementById("main").innerHTML=h;
 
   document.getElementById("stamp").textContent=all.length+" 項";
@@ -542,7 +576,7 @@ function applyFilter(){
   });
   if(gotMode){
     document.querySelectorAll("section").forEach(function(s){
-      if(s.dataset.s==="info"){s.classList.add("hidden");return}
+      if(s.dataset.s==="info"||s.dataset.s==="sos"||s.dataset.s==="trip"){s.classList.add("hidden");return}
       var hasItems=s.querySelectorAll(".item:not(.hidden)").length>0;
       var hasCust=custOf(s.dataset.s).length>0;
       s.classList.toggle("hidden",!hasItems&&!hasCust);
