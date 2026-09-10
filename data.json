@@ -1964,5 +1964,345 @@
         ]
       }
     ]
+  },
+  "lingo": {
+    "id": "lingo",
+    "chip": "用語",
+    "tag": "義大利文",
+    "title": "旅行用語",
+    "sub": "重音在粗體那個音節。義大利文照字面唸就對了，比英文好唸很多。",
+    "blocks": [
+      {
+        "h": "最常用的十句",
+        "items": [
+          {
+            "it": "Buongiorno",
+            "zh": "早安／您好",
+            "pron": "bwon-JOR-no",
+            "note": "早上到下午都能用。<b>進店門先說這句</b>——義大利人很在意這個禮貌，默默進去看東西會被覺得沒教養。"
+          },
+          {
+            "it": "Buonasera",
+            "zh": "晚安（傍晚起）",
+            "pron": "bwo-na-SE-ra",
+            "note": "大約下午四五點後改用這句。"
+          },
+          {
+            "it": "Grazie",
+            "zh": "謝謝",
+            "pron": "GRA-tsye",
+            "note": "注意是「葛拉ㄘㄧㄝ」不是「葛拉吉」。加強版 <b>Grazie mille</b>（萬分感謝）。"
+          },
+          {
+            "it": "Prego",
+            "zh": "不客氣／請",
+            "pron": "PRE-go",
+            "note": "萬用詞。回應謝謝、請人先走、請進、店員招呼你都用這個。"
+          },
+          {
+            "it": "Scusi",
+            "zh": "不好意思",
+            "pron": "SKU-zi",
+            "note": "叫住陌生人、要借過、要問路都用這句開頭。"
+          },
+          {
+            "it": "Per favore",
+            "zh": "麻煩你／請",
+            "pron": "per fa-VO-re",
+            "note": "接在請求後面，例如 <i>Un caffè, per favore</i>。"
+          },
+          {
+            "it": "Sì / No",
+            "zh": "是／不是",
+            "pron": "si / no"
+          },
+          {
+            "it": "Quanto costa?",
+            "zh": "多少錢？",
+            "pron": "KWAN-to KOS-ta",
+            "note": "指著東西問就好。聽不懂答案可以說 <i>Scriva, per favore</i>（請寫下來）。"
+          },
+          {
+            "it": "Non capisco",
+            "zh": "我聽不懂",
+            "pron": "non ka-PIS-ko",
+            "note": "接著說 <i>Parla inglese?</i>（你會說英語嗎）。"
+          },
+          {
+            "it": "Arrivederci",
+            "zh": "再見",
+            "pron": "a-ri-ve-DER-chi",
+            "note": "離開店家時說。輕鬆版是 <b>Ciao</b>，但對陌生人和長輩用 Arrivederci 比較妥當。"
+          }
+        ]
+      },
+      {
+        "h": "咖啡吧台",
+        "items": [
+          {
+            "it": "Un caffè, per favore",
+            "zh": "請給我一杯咖啡",
+            "pron": "un ka-FE",
+            "note": "<b>caffè 就是 espresso。</b>點「coffee」店員會愣住。"
+          },
+          {
+            "it": "Un cappuccino",
+            "zh": "一杯卡布奇諾",
+            "pron": "un ka-pu-CHI-no",
+            "note": "⚠️ 義大利人<b>只在早餐喝</b>，中午後點會被覺得奇怪，但不會拒賣。"
+          },
+          {
+            "it": "Al banco",
+            "zh": "在吧台喝",
+            "pron": "al BAN-ko",
+            "note": "<b>先到收銀台付錢拿收據</b>，再拿收據到吧台點。站著喝 €1.5–2.5，坐下幾乎 €5 起跳。"
+          },
+          {
+            "it": "Un'acqua naturale",
+            "zh": "一杯無氣泡水",
+            "pron": "u-NA-kwa na-tu-RA-le",
+            "note": "氣泡水是 <b>frizzante</b>（fri-TSAN-te）。餐廳問 naturale o frizzante 就是問這個。"
+          },
+          {
+            "it": "Il conto, per favore",
+            "zh": "請結帳",
+            "pron": "il KON-to",
+            "note": "義大利不主動送帳單，要自己開口。"
+          }
+        ]
+      },
+      {
+        "h": "餐廳點餐",
+        "items": [
+          {
+            "it": "Un tavolo per due",
+            "zh": "兩個人的位子",
+            "pron": "un TA-vo-lo per DU-e",
+            "note": "數字：uno 1、due 2、tre 3、quattro 4。"
+          },
+          {
+            "it": "Il menù, per favore",
+            "zh": "請給我菜單",
+            "pron": "il me-NU"
+          },
+          {
+            "it": "Questo, per favore",
+            "zh": "請給我這個",
+            "pron": "KWES-to",
+            "note": "<b>指著菜單說這句最好用</b>，不用唸出菜名。"
+          },
+          {
+            "it": "Sono vegetariano/a",
+            "zh": "我吃素",
+            "pron": "SO-no ve-je-ta-RYA-no",
+            "note": "女生用 <b>vegetariana</b> 結尾。"
+          },
+          {
+            "it": "Senza…",
+            "zh": "不要加…",
+            "pron": "SEN-tsa",
+            "note": "例如 <i>senza cipolla</i>（不要洋蔥）、<i>senza formaggio</i>（不要起司）。"
+          },
+          {
+            "it": "Da portare via",
+            "zh": "外帶",
+            "pron": "da por-TA-re VI-a",
+            "note": "內用是 <i>qui</i>（kwi）。"
+          },
+          {
+            "it": "È molto buono!",
+            "zh": "很好吃！",
+            "pron": "e MOL-to BWO-no",
+            "note": "說了店家會很開心，通常會多聊兩句。"
+          },
+          {
+            "it": "Il coperto",
+            "zh": "座位費",
+            "pron": "il ko-PER-to",
+            "note": "義大利餐廳常收的<b>桌費</b>，一人 €1–3，寫在菜單角落。這不是小費，是正常收費。"
+          }
+        ]
+      },
+      {
+        "h": "購物",
+        "items": [
+          {
+            "it": "Posso guardare?",
+            "zh": "我可以看看嗎？",
+            "pron": "PO-so gwar-DA-re",
+            "note": "店員問你要什麼時，禮貌的回法是 <i>Sto solo guardando</i>（我只是看看）。"
+          },
+          {
+            "it": "Avete la taglia…?",
+            "zh": "有…號嗎？",
+            "pron": "a-VE-te la TA-lya",
+            "note": "尺寸說法：piccola 小、media 中、grande 大。"
+          },
+          {
+            "it": "Posso provare?",
+            "zh": "可以試穿嗎？",
+            "pron": "PO-so pro-VA-re"
+          },
+          {
+            "it": "Tax free, per favore",
+            "zh": "我要辦退稅",
+            "pron": "—",
+            "note": "<b>直接說英文 tax free 店員就懂。</b>同店同日滿 €70 才能辦，要出示護照。"
+          },
+          {
+            "it": "Accettate carte?",
+            "zh": "可以刷卡嗎？",
+            "pron": "a-che-TA-te KAR-te",
+            "note": "小店和市集攤位常只收現金（<i>solo contanti</i>）。"
+          },
+          {
+            "it": "È troppo caro",
+            "zh": "太貴了",
+            "pron": "e TRO-po KA-ro",
+            "note": "⚠️ <b>只在市集攤位用</b>。一般店家和超市不二價，殺價會很失禮。"
+          },
+          {
+            "it": "Facciamo … euro?",
+            "zh": "…歐元可以嗎？",
+            "pron": "fa-CHA-mo … E-u-ro",
+            "note": "皮件市集殺價用。<b>從對方開價的五折開始喊。</b>"
+          },
+          {
+            "it": "Un sacchetto, per favore",
+            "zh": "請給我袋子",
+            "pron": "un sa-KE-to",
+            "note": "超市塑膠袋要付費（約 €0.05–0.15）。"
+          }
+        ]
+      },
+      {
+        "h": "問路與交通",
+        "items": [
+          {
+            "it": "Dov'è…?",
+            "zh": "…在哪裡？",
+            "pron": "do-VE",
+            "note": "後面接地點，例如 <i>Dov'è il bagno?</i>（廁所在哪）。"
+          },
+          {
+            "it": "Il bagno",
+            "zh": "廁所",
+            "pron": "il BA-nyo",
+            "note": "咖啡館的廁所通常要消費才能用。公廁多半要付費 €0.5–1，<b>隨身帶零錢</b>。"
+          },
+          {
+            "it": "Quanto tempo a piedi?",
+            "zh": "走路要多久？",
+            "pron": "KWAN-to TEM-po a PYE-di"
+          },
+          {
+            "it": "Sono perso/a",
+            "zh": "我迷路了",
+            "pron": "SO-no PER-so",
+            "note": "女生用 <b>persa</b>。"
+          },
+          {
+            "it": "Può aiutarmi?",
+            "zh": "可以幫我嗎？",
+            "pron": "pwo a-yu-TAR-mi"
+          },
+          {
+            "it": "A destra / A sinistra",
+            "zh": "右邊／左邊",
+            "pron": "a DES-tra / a si-NIS-tra",
+            "note": "直走是 <b>sempre dritto</b>（SEM-pre DRI-to）。"
+          }
+        ]
+      },
+      {
+        "h": "拍照與社交",
+        "items": [
+          {
+            "it": "Posso fare una foto?",
+            "zh": "我可以拍照嗎？",
+            "pron": "PO-so FA-re u-na FO-to",
+            "note": "拍店內、拍人之前先問。教堂內常禁閃光燈（<i>senza flash</i>）。"
+          },
+          {
+            "it": "Può farmi una foto?",
+            "zh": "可以幫我拍照嗎？",
+            "pron": "pwo FAR-mi u-na FO-to",
+            "note": "把手機遞過去說這句。"
+          },
+          {
+            "it": "Sono di Taiwan",
+            "zh": "我來自台灣",
+            "pron": "SO-no di tai-WAN",
+            "note": "義大利人對台灣通常反應很好，常會聊起來。"
+          },
+          {
+            "it": "Molto bello!",
+            "zh": "好美！",
+            "pron": "MOL-to BE-lo",
+            "note": "萬用讚美。食物用 <b>buono</b>，風景和東西用 <b>bello</b>。"
+          }
+        ]
+      },
+      {
+        "h": "緊急",
+        "items": [
+          {
+            "it": "Aiuto!",
+            "zh": "救命！",
+            "pron": "a-YU-to"
+          },
+          {
+            "it": "Chiami la polizia",
+            "zh": "請叫警察",
+            "pron": "KYA-mi la po-li-TSI-a"
+          },
+          {
+            "it": "Chiami un'ambulanza",
+            "zh": "請叫救護車",
+            "pron": "KYA-mi u-nam-bu-LAN-tsa"
+          },
+          {
+            "it": "Mi hanno rubato il portafoglio",
+            "zh": "我的錢包被偷了",
+            "pron": "mi A-no ru-BA-to il por-ta-FO-lyo",
+            "note": "護照是 <b>il passaporto</b>。"
+          },
+          {
+            "it": "Ho bisogno di un medico",
+            "zh": "我需要看醫生",
+            "pron": "o bi-ZO-nyo di un ME-di-ko"
+          },
+          {
+            "it": "Dov'è la farmacia?",
+            "zh": "藥局在哪裡？",
+            "pron": "do-VE la far-ma-CHI-a",
+            "note": "找<b>綠色十字招牌</b>。義大利藥師可以給成藥建議，很多會說英語。"
+          }
+        ]
+      },
+      {
+        "h": "發音三個規則",
+        "items": [
+          {
+            "it": "ci / ce → ㄑㄧ／ㄑㄝ",
+            "zh": "c 遇到 i、e 唸「ch」",
+            "pron": "—",
+            "note": "ciao = CHAO、cappuccino = ka-pu-CHI-no。其他情況 c 唸 K：<i>caffè</i> = ka-FE。"
+          },
+          {
+            "it": "gli → ㄌㄧ",
+            "zh": "g-l-i 連在一起唸「莉」",
+            "pron": "—",
+            "note": "famiglia = fa-MI-lya、portafoglio = por-ta-FO-lyo。"
+          },
+          {
+            "it": "h 不發音、gh 唸硬 g",
+            "zh": "h 永遠不發音",
+            "pron": "—",
+            "note": "hotel = o-TEL、spaghetti = spa-GE-ti（不是「斯巴傑提」）。"
+          }
+        ]
+      }
+    ]
   }
 }

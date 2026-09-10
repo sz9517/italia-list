@@ -184,6 +184,18 @@ h3 .cnt{font-weight:400;color:var(--ink-soft);letter-spacing:.04em}
 .sos-h .sos-n{font-size:14.5px}
 .sos-h .sos-d{margin-top:7px}
 
+/* lingo */
+.lg{border-bottom:1px dotted var(--rule);padding:14px 0}
+.lg:last-child{border-bottom:none}
+.lg-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.lg-it{font-family:"Bodoni Moda",serif;font-size:19px;font-weight:700;color:var(--green);line-height:1.25}
+.lg-zh{flex:0 0 auto;font-size:14px;color:var(--ink);font-weight:500;text-align:right}
+.lg-pr{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--gold);margin-top:5px;letter-spacing:.02em}
+.lg-pr b{color:var(--red);font-weight:600}
+.lg-n{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.65}
+.lg-n b{color:var(--ink);font-weight:600}
+.lg-n i{font-style:italic;color:var(--green)}
+
 /* stores */
 .store{background:var(--paper-2);border-radius:4px;padding:14px 15px;margin:0 0 10px;border-left:3px solid var(--gold)}
 .store.pick{border-left-color:var(--green)}
@@ -346,6 +358,7 @@ function render(){
   if(DATA.trip)chips+='<button class="chip" data-f="'+DATA.trip.id+'" aria-pressed="false">'+DATA.trip.chip+'</button>';
   DATA.days.forEach(function(d){chips+='<button class="chip" data-f="'+d.id+'" aria-pressed="false">'+d.chip+'</button>'});
   chips+='<button class="chip" data-f="'+DATA.info.id+'" aria-pressed="false">'+DATA.info.chip+'</button>';
+  if(DATA.lingo)chips+='<button class="chip" data-f="'+DATA.lingo.id+'" aria-pressed="false">'+DATA.lingo.chip+'</button>';
   if(DATA.sos)chips+='<button class="chip sos-chip" data-f="'+DATA.sos.id+'" aria-pressed="false">'+DATA.sos.chip+'</button>';
   document.getElementById("chips").innerHTML=chips;
 
@@ -439,6 +452,21 @@ function render(){
   h+='<section data-s="'+DATA.info.id+'"><p class="daytag">'+DATA.info.tag+'</p><h2>'+DATA.info.title+'</h2>';
   DATA.info.blocks.forEach(function(b){h+='<h3><span>'+b.h+'</span></h3><div class="call'+(b.red?" red":"")+'">'+b.html+'</div>'});
   h+='</section>';
+
+  /* 旅行用語 */
+  if(DATA.lingo){
+    var lg=DATA.lingo;
+    h+='<section data-s="'+lg.id+'"><p class="daytag">'+lg.tag+'</p><h2>'+lg.title+'</h2><p class="sub">'+lg.sub+'</p>';
+    lg.blocks.forEach(function(b){
+      h+='<h3><span>'+b.h+'</span><span class="cnt">'+b.items.length+'</span></h3>';
+      b.items.forEach(function(x){
+        h+='<div class="lg"><div class="lg-h"><span class="lg-it">'+x.it+'</span><span class="lg-zh">'+x.zh+'</span></div>'+
+           (x.pron&&x.pron!=="—"?'<div class="lg-pr">'+x.pron+'</div>':'')+
+           (x.note?'<div class="lg-n">'+x.note+'</div>':'')+'</div>';
+      });
+    });
+    h+='</section>';
+  }
 
   /* 急難 */
   if(DATA.sos){
@@ -576,7 +604,7 @@ function applyFilter(){
   });
   if(gotMode){
     document.querySelectorAll("section").forEach(function(s){
-      if(s.dataset.s==="info"||s.dataset.s==="sos"||s.dataset.s==="trip"){s.classList.add("hidden");return}
+      if(s.dataset.s==="info"||s.dataset.s==="sos"||s.dataset.s==="trip"||s.dataset.s==="lingo"){s.classList.add("hidden");return}
       var hasItems=s.querySelectorAll(".item:not(.hidden)").length>0;
       var hasCust=custOf(s.dataset.s).length>0;
       s.classList.toggle("hidden",!hasItems&&!hasCust);
